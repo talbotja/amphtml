@@ -1,12 +1,13 @@
 {
   "vars": {
-    "identity": "${clientId(_ga)}"
+    "identity": "${clientId(_ga)}",
+    "viewId": "PAGE_VIEW_ID_64"
   },
   "requests": {
-    "track": "https://${namespace}.amp.permutive.com/track?k=${key}&i=${identity}&it=amp",
+    "track": "https://${namespace}.amp.permutive.com/track?k=${key}&i=${identity}&it=amp&v=${viewId}&s=${viewId}",
     "pageview": "${track}&e=Pageview&_ep_isp_info=%24ip_isp_info&_ep_geo_info=%24ip_geo_info",
-    "engagement": "${track}&e=PageviewEngagement&_ep_engaged_time=5",
-    "completion": "${track}&e=PageviewEngagement&_ep_completion=0.25",
+    "engagement": "${track}&e=PageviewEngagement&_ep_engaged_time=${incrementalEngagedTime}",
+    "completion": "${engagement}&_ep_completion=0.25",
     "custom": "${track}&e=${event}"
   },
   "triggers": {
@@ -15,12 +16,7 @@
       "request": "pageview"
     },
     "trackEngagement": {
-      "on": "timer",
-      "timerSpec": {
-        "interval": 5,
-        "maxTimerLength": 600,
-        "immediate": false
-      },
+      "on": "hidden",
       "request": "engagement"
     },
     "trackCompletion": {
