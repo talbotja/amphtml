@@ -16,8 +16,11 @@
       "request": "pageview"
     },
     "trackEngagement": {
-      "on": "hidden",
-      "request": "engagement"
+      "on": "visible",
+      "request": "engagement",
+      "visibilitySpec": {
+        "reportWhen": "documentExit"
+      }
     },
     "trackCompletion": {
       "on": "scroll",
