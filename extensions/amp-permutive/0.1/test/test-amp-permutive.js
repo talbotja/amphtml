@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import '../amp-hello-world';
+import '../amp-permutive';
 
-describes.realWin('amp-hello-world', {
+describes.realWin('amp-permutive', {
   amp: {
-    extensions: ['amp-hello-world'],
+    extensions: ['amp-permutive'],
   },
 }, env => {
 
@@ -27,7 +27,7 @@ describes.realWin('amp-hello-world', {
 
   beforeEach(() => {
     win = env.win;
-    element = win.document.createElement('amp-hello-world');
+    element = win.document.createElement('amp-permutive');
     element.setAttribute("layout", "responsive");
     element.setAttribute("width", 150);
     element.setAttribute("height", 80);

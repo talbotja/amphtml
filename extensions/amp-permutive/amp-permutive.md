@@ -32,7 +32,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-# `amp-hello-world`
+# `amp-permutive`
 
 <!--
   If the component is relevant for more than one format and operates differently between these
@@ -47,12 +47,12 @@ One to three paragraphs explaining the component usage. List important functiona
 
 Below is an example for websites.
 
-[example preview="inline" playground="true" imports="amp-hello-world"]
+[example preview="inline" playground="true" imports="amp-permutive"]
 
 ```html
-<amp-hello-world required-attribute>
-  I am a hello world inline executable code sample for websites!
-</amp-hello-world>
+<amp-permutive required-attribute>
+  I am a Permutive inline executable code sample for websites!
+</amp-permutive>
 ```
 
 [/example][/filter]
@@ -66,12 +66,12 @@ Below is an example for websites.
 
 Below is an example for ads.
 
-[example preview=“inline” playground=“true” imports="amp-hello-world"]
+[example preview=“inline” playground=“true” imports="amp-permutive"]
 
 ```html
-<amp-hello-world required-attribute>
+<amp-permutive required-attribute>
   I am a hello world inline executable code sample for ads!
-</amp-hello-world>
+</amp-permutive>
 ```
 
 [/example][/filter]
@@ -81,9 +81,9 @@ Below is an example for ads.
 What to do if they want behavior. How to work around it.
 
 ```html
-<amp-hello-world required-attribute>
+<amp-permutive required-attribute>
   Code sample of behavior or behavior workaround.
-</amp-hello-world>
+</amp-permutive>
 ```
 
 ### Behavior restrictions
@@ -96,42 +96,42 @@ What is allowed, what isn't.
 
 Description of attribute. Use cases for this attribute.
 
-- `attribute-value-option-one` (default): `attribute-option-one-value` does this to `amp-hello-world`.
-- `attribute-value-option-two`: `attribute-option-two-value` does this to `amp-hello-world`.
+- `attribute-value-option-one` (default): `attribute-option-one-value` does this to `amp-permutive`.
+- `attribute-value-option-two`: `attribute-option-two-value` does this to `amp-permutive`.
 
 ### `optional-attribute-name` (optional)
 
-Here, I write what `optional-attribute-name` will do to `amp-hello-world`.
+Here, I write what `optional-attribute-name` will do to `amp-permutive`.
 
 ## Actions (optional)
 
 ### `action-name`
 
-Description of action. Use cases of `action-name`. Include all the nuances, such as: `amp-hello-world` needs to be identified with an `id` to work.
+Description of action. Use cases of `action-name`. Include all the nuances, such as: `amp-permutive` needs to be identified with an `id` to work.
 
 ## Events (optional)
 
 ### `event-name`
 
-Description of event. Use cases of event-name. Include all the nuances, such as: `amp-hello-world` needs to be identified with an `id` to work.
+Description of event. Use cases of event-name. Include all the nuances, such as: `amp-permutive` needs to be identified with an `id` to work.
 
 [example preview=”top-frame” playground=”true”]
 
 ```html
 <head>
   <script
-    custom-element="amp-hello-world"
+    custom-element="amp-permutive"
     async
-    src="https://cdn.ampproject.org/v0/amp-hello-world-latest.js"
+    src="https://cdn.ampproject.org/v0/amp-permutive-latest.js"
   ></script>
 </head>
 <body>
-  <amp-hello-world
+  <amp-permutive
     required-attribute
     on="event-name: my-button.show"
   >
     Hello World!
-  </amp-hello-world>
+  </amp-permutive>
   <button id="my-button" hidden>
     Here I am!
   </button>
@@ -154,8 +154,8 @@ Explain analytics.
 
 ## Accessibility (optional)
 
-Accessibility information related to `amp-hello-world`.
+Accessibility information related to `amp-permutive`.
 
 ## Validation
 
-See [amp-hello-world rules](https://github.com/ampproject/amphtml/blob/master/extensions/amp-hello-world/validator-amp-hello-world.protoascii) in the AMP validator specification.
+See [amp-permutive rules](https://github.com/ampproject/amphtml/blob/master/extensions/amp-permutive/validator-amp-permutive.protoascii) in the AMP validator specification.

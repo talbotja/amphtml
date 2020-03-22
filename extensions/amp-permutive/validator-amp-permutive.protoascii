@@ -14,22 +14,22 @@
 # limitations under the license.
 #
 
-tags: {  # amp-hello-world
+tags: {  # amp-permutive
   html_format: AMP
   tag_name: "SCRIPT"
   extension_spec: {
-    name: "amp-hello-world"
+    name: "amp-permutive"
     version: "0.1"
     version: "latest"
   }
   attr_lists: "common-extension-attrs"
 }
-tags: {  # <amp-hello-world>
+tags: {  # <amp-permutive>
   html_format: AMP
-  tag_name: "AMP-HELLO-WORLD"
-  requires_extension: "amp-hello-world"
+  tag_name: "AMP-permutive"
+  requires_extension: "amp-permutive"
   attr_lists: "extended-amp-global"
-  spec_url: "https://amp.dev/documentation/components/amp-hello-world"
+  spec_url: "https://amp.dev/documentation/components/amp-permutive"
   amp_layout: {
     supported_layouts: RESPONSIVE
   }

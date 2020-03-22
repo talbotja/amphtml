@@ -209,7 +209,11 @@ exports.extensionBundles = [
     latestVersion: '0.1',
     type: TYPES.MEDIA,
   },
-  {name: 'amp-hello-world', version: '0.1', latestVersion: '0.1', type: TYPES.MISC},
+  {
+    name: 'amp-permutive',
+    version: '0.1',
+    latestVersion: '0.1',
+    type: TYPES.MISC},
   {
     name: 'amp-3q-player',
     version: '0.1',
