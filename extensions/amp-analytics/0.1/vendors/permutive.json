@@ -6,8 +6,7 @@
   "requests": {
     "track": "https://${namespace}.amp.permutive.com/track?k=${key}&i=${identity}&it=amp&vid=${viewId}&s=${viewId}",
     "pageview": "${track}&e=Pageview&_ep_isp_info=%24ip_isp_info&_ep_geo_info=%24ip_geo_info",
-    "engagement": "${track}&e=PageviewEngagement&_ep_engaged_time=${incrementalEngagedTime}",
-    "completion": "${engagement}&_ep_completion=0.25",
+    "engagement": "${track}&e=PageviewEngagement&_ep_view_type=a&_ep_engaged_time=${incrementalEngagedTime}",
     "custom": "${track}&e=${event}"
   },
   "triggers": {
@@ -21,13 +20,6 @@
       "visibilitySpec": {
         "reportWhen": "documentExit"
       }
-    },
-    "trackCompletion": {
-      "on": "scroll",
-      "scrollSpec": {
-        "verticalBoundaries": [25, 50, 75, 100]
-      },
-      "request": "completion"
     }
   },
   "transport": {
